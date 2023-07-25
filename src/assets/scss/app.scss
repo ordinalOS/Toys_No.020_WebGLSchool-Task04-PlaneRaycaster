@@ -14,6 +14,8 @@ body {
   overflow: hidden;
 }
 
+
+
 body {
   &[data-status=""] {
     cursor: wait;
@@ -21,6 +23,14 @@ body {
   &[data-hover="1"] {
     cursor: pointer;
   }
+}
+
+.lil-gui {
+  display:none !important;
+}
+
+#stats {
+  display: none !important;
 }
 
 // --------------------------
@@ -71,8 +81,8 @@ body {
   bottom: 0;
   z-index: 0;
   margin: auto;
-  width: 48px;
-  height: 48px;
+  width: 55px;
+  height: 55px;
   display: flex;
   img {
     width: 100%;
@@ -106,8 +116,8 @@ body {
 }
 .c-title__row {
   display: block;
-  font-size: 54px;
-  font-weight: 900;
+  font-size: 36px;
+  font-weight: 500;
   line-height: 120%;
   letter-spacing: -2px;
   color: var(--black);
@@ -115,7 +125,7 @@ body {
     font-size: clamp(liquid(32), liquid(32), 32px);
   }
   &:nth-of-type(2) {
-    font-size: 36px;
+    font-size: 20px;
     @include sp_w() {
       font-size: clamp(liquid(24), liquid(24), 24px);
     }
@@ -131,8 +141,8 @@ body {
   user-select: none;
   cursor: pointer;
   position: fixed;
-  bottom: 16px;
-  left: 16px;
+  top: 16px;
+  right: 16px;
   z-index: 100;
   width: 120px;
   height: 40px;
@@ -213,8 +223,8 @@ body {
 .c-copyright {
   user-select: none;
   position: fixed;
-  bottom: 16px;
-  right: 16px;
+  bottom: 20px;
+  right: 40px;
   z-index: 2000;
   display: block;
   font-size: 12px;
@@ -266,12 +276,14 @@ body {
 .c-github {
   user-select: none;
   position: fixed;
-  top: 16px;
+  bottom: 16px;
   right: 16px;
   z-index: 100;
   width: 20px;
   height: 20px;
   display: flex;
+  color:black;
+  font-size:20px;
   align-items: center;
   @include sp_w() {
     top: 12px;

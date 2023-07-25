@@ -2,15 +2,15 @@ const isMatchMediaWidth = window.matchMedia("(max-width: 768px)").matches;
 
 export const Config = {
   plane: {
-    size: 2,
+    size: .1,
     scale: {
-      init: 2,
-      anime: isMatchMediaWidth ? 4 : 6,
+      init: 1,
+      anime: isMatchMediaWidth ? 4 : 8,
     },
   },
   camera: {
     zoom: {
-      init: 0.06,
+      init: 0.04,
       anime: 0,
     },
     position: {

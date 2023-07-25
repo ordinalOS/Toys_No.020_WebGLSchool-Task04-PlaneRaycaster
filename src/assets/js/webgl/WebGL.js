@@ -27,7 +27,7 @@ export class WebGL {
 
     // lib
     this.gui = new SetGui();
-    this.stats = new SetStats(body);
+    // this.stats = new SetStats(body);
 
     // module
     this.stage = new Stage(params, bool);
